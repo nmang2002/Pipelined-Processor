@@ -19,7 +19,7 @@ module imem(
     logic [31:0] memory [63:0];
 
     // modify the name and potentially directory prefix of the file within to load the correct program and preprocessing
-    initial $readmemb("memfile.dat", memory);
+    initial $readmemb("memfile3.dat", memory);
 
 
     assign instr = memory[addr[31:2]]; // word aligned, drops bottom 2 bits
